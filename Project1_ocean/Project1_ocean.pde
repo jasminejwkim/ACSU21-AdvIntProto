@@ -26,7 +26,6 @@ void setup(){
 }
 
 void draw(){
-  
   if (Timmy.health <= 0) {
     textSize(32);
     fill(255,0,0);
