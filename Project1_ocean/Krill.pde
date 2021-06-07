@@ -1,37 +1,42 @@
 class Krill{
   color kColor;
-  boolean eaten;
-  float posX, posY, velX, velY;
-  float sizeX, sizeY; 
+  boolean isEaten;
+  float velX, velY;
+  float x, y, sizex; 
+  
   
  Krill(){
     kColor= color(255,153,153);
-      
-    sizeX = 20;
-    sizeY = 20;
-    
-    posX = sizeX/2 +10;
-    posY = height/2;
+    isEaten=false;
+    sizex = 20;
+    x = random(0,width-sizex);
+    y = random(0,height-sizex);
     velX = random(3,5);
     velY = random(1,4);
     
  }
  
-    void display(){
+  void display(){
+    if (!isEaten){
     fill(kColor);
-    ellipse(posX, posY, sizeX, sizeY);
+    square(x,y, sizex);
+    }
   }
   
-    void swim(){
+  void eat() {
+      isEaten=true;
+    }
     
-    if(posX + sizeX/2 >= width || posX - sizeX/2 <=0){
+  void swim(){
+    
+    if(x + sizex>= width || x  <=0){
       velX *= -1;
     }
-    if(posY + sizeY/2 >= height || posY- sizeY/2 <=0){
+    if(y + sizex >= height || y <=0){
       velY *= -1;
     }
-    posX = posX + velX;
-    posY = posY + velY;
+    x = x + velX;
+    y = y + velY;
   }
  
 }

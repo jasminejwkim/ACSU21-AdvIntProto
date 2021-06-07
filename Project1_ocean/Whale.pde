@@ -1,51 +1,70 @@
 class Whale{
   color wColor;
-  boolean alive;
-  float posX, posY, velX, velY;
-  float sizeX, sizeY;
+  float velX, velY;  
+ 
+  float x, y, sizex, sizey;
+ int health;
   
-  float healthIndex;//0-1 .5
-  
-  int numKrillEaten;
-  int numTrashEaten;
   
   Whale(){
-    wColor=color(70, 160, 30);
-    alive = true;
+    wColor=color(40, 180, 246);    
+    sizex = 100;
+    sizey = 50;
     
-    sizeX = 100;
-    sizeY = 50;
-    
-    posX = sizeX/2 +10;
-    posY = height/2;
+    x = sizex/2 +10;
+    y = sizey/2;
     velX = random(3,5);
     velY = random(1,4);
     
-    healthIndex = 0.75;
+    health = 5;
   }
   
+    void checkTouchingTrash(Trash other) {
+      Boolean isOverlapping = ((x + sizex >= other.x && x <= other.x) || (other.x + other.sizex >= x && other.x <= x)) &&
+                              ((y + sizey >= other.y && y <= other.y) || (other.y + other.sizex >= y && other.y <= y))
+  ;
+  
+    if (isOverlapping) {
+      // eat other
+      other.eat();
+      health--;
+    } else {
+      // do nothing
+    }
+    
+  
+}
+
+ void checkTouchingKrill(Krill other) {
+      Boolean isOverlapping = ((x + sizex >= other.x && x <= other.x) || (other.x + other.sizex >= x && other.x <= x)) &&
+                              ((y + sizey >= other.y && y <= other.y) || (other.y + other.sizex >= y && other.y <= y))
+    ;
+      if (isOverlapping) {
+      other.eat();
+      health++;
+      
+      }
+ }
+ 
   void display(){
     fill(wColor);
-    ellipse(posX, posY, sizeX, sizeY);
-  }
-  
+    rect(x, y, sizex, sizey);
+     
+    
+}
+
   
   void swim(){
     
-    if(posX + sizeX/2 >= width || posX - sizeX/2 <=0){
+    
+    if(x + sizex>= width || x <=0){
       velX *= -1;
     }
-    if(posY + sizeY/2 >= height || posY- sizeY/2 <=0){
+    if(y + sizey>= height || y <=0){
       velY *= -1;
     }
-    posX = posX + velX;
-    posY = posY + velY;
+    
+    x = x + velX;
+    y = y + velY;
   }
-  
-  void eat(){
-  }
-  
-  void die(){
-  }
-  
 }
