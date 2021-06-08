@@ -11,15 +11,15 @@ class Krill{
     sizex = 20;
     x = random(0,width-sizex);
     y = random(0,height-sizex);
-    velX = random(3,5);
-    velY = random(1,4);
+    velX = random(-2,2);
+    velY = random(-2,2);
     
  }
  
   void display(){
     if (!isEaten){
     fill(kColor);
-    square(x,y, sizex);
+    circle(x,y, sizex);
     }
   }
   
