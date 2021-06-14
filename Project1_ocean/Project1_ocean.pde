@@ -25,6 +25,7 @@ void setup() {
 }
 
 void draw() {
+  
   currentremainder = millis()%3000;
   if (currentremainder<previousremainder) {
     krills.add(new Krill());

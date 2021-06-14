@@ -43,7 +43,7 @@ class Whale {
       health++;
     }
   }
-
+ 
   void display() {
     wColor=color(map(health, 0, 5, 30, 210));
     fill(wColor);
@@ -52,16 +52,16 @@ class Whale {
 
 
   void swim() {
-    if (velX>0) {
-      velX=health;
-    } else {
-      velX= health*-1;
-    }
-    if (velY>0) {
-      velY=health;
-    } else {
-      velY= health*-1;
-    }
+    //if (velX>0) {
+    //  velX=health;
+    //} else {
+    //  velX= health*-1;
+    //}
+    //if (velY>0) {
+    //  velY=health;
+    //} else {
+    //  velY= health*-1;
+    //}
     if (x + sizex>= width || x <=0) {
       velX *= -1;
     }
