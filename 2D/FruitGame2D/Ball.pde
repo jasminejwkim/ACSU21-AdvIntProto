@@ -22,8 +22,7 @@ class Ball {
   void move() {
     if (keyPressed) {
       if (key == 'a' || key == 'A') {
-        x=x-1;
-       
+        x=x-1;      
       }
       if (key == 'd' || key == 'D') {
         x=x+1;
