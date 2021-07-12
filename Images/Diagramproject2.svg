@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 792 612" style="enable-background:new 0 0 792 612;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st1{font-family:'ArialMT';}
+	.st2{font-size:12px;}
+	.st3{fill:none;}
+</style>
+<rect x="314.9" y="118.5" class="st0" width="131.9" height="195.2"/>
+<text transform="matrix(1 0 0 1 314.8921 108.36)" class="st1 st2">Squeezer</text>
+<rect x="601" y="110.2" class="st0" width="131.9" height="195.2"/>
+<text transform="matrix(1 0 0 1 601.0162 100.048)" class="st1 st2">Cup</text>
+<rect x="43.4" y="126.8" class="st0" width="131.9" height="195.2"/>
+<text transform="matrix(1 0 0 1 43.4064 116.6718)" class="st1 st2">Fruit</text>
+<rect x="321.2" y="125.8" class="st3" width="114.3" height="153.9"/>
+<text transform="matrix(1 0 0 1 321.1671 134.2747)" class="st1 st2">Color</text>
+<text transform="matrix(1 0 0 1 321.1671 148.6747)" class="st1 st2">Position</text>
+<text transform="matrix(1 0 0 1 321.1671 163.0747)" class="st1 st2">Velocity</text>
+<text transform="matrix(1 0 0 1 321.1671 177.4747)" class="st1 st2">Size</text>
+<text transform="matrix(1 0 0 1 321.1671 206.2747)" class="st1 st2">Display</text>
+<text transform="matrix(1 0 0 1 321.1671 220.6747)" class="st1 st2">Close</text>
+<rect x="609.8" y="117.4" class="st3" width="114.3" height="153.9"/>
+<text transform="matrix(1 0 0 1 609.8271 125.9628)" class="st1 st2">Color</text>
+<text transform="matrix(1 0 0 1 609.8271 140.3628)" class="st1 st2">Position</text>
+<text transform="matrix(1 0 0 1 609.8271 154.7628)" class="st1 st2">Velocity</text>
+<text transform="matrix(1 0 0 1 609.8271 169.1628)" class="st1 st2">Size</text>
+<text transform="matrix(1 0 0 1 609.8271 197.9628)" class="st1 st2">Display</text>
+<text transform="matrix(1 0 0 1 609.8271 212.3628)" class="st1 st2">Fill</text>
+<rect x="52.2" y="134.1" class="st3" width="114.3" height="153.9"/>
+<text transform="matrix(1 0 0 1 52.2173 142.5866)" class="st1 st2">Color</text>
+<text transform="matrix(1 0 0 1 52.2173 156.9866)" class="st1 st2">Position</text>
+<text transform="matrix(1 0 0 1 52.2173 171.3866)" class="st1 st2">Velocity</text>
+<text transform="matrix(1 0 0 1 52.2173 185.7866)" class="st1 st2">Size</text>
+<text transform="matrix(1 0 0 1 52.2173 214.5866)" class="st1 st2">Display</text>
+<text transform="matrix(1 0 0 1 52.2173 228.9866)" class="st1 st2">Move</text>
+<text transform="matrix(1 0 0 1 52.2173 243.3866)" class="st1 st2">Drop</text>
+<text transform="matrix(1 0 0 1 43.4062 60.415)" class="st1 st2">User moves  the</text>
+<rect x="180.8" y="197.1" class="st3" width="119.9" height="36.7"/>
+<text transform="matrix(1 0 0 1 180.7474 205.6689)" class="st1 st2">to land it on top of the</text>
+<rect x="456" y="197.1" class="st3" width="145" height="31.7"/>
+<text transform="matrix(1 0 0 1 455.9729 205.6689)" class="st1 st2">and to fill juice in the </text>
+<rect x="592.2" y="383.9" class="st0" width="131.9" height="195.2"/>
+<text transform="matrix(1 0 0 1 592.2051 373.7233)" class="st1 st2">Scene </text>
+<rect x="601" y="391.1" class="st3" width="114.3" height="153.9"/>
+<text transform="matrix(1 0 0 1 601.0161 399.6381)" class="st1 st2">Color</text>
+<text transform="matrix(1 0 0 1 601.0161 442.8381)" class="st1 st2">Display</text>
+<text transform="matrix(1 0 0 1 601.0161 457.2381)" class="st1 st2">Fill</text>
+<text transform="matrix(1 0 0 1 601.0161 471.6381)" class="st1 st2">Update</text>
+</svg>

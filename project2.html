@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title class= title >ACSU21:Advanced Interactive Prototyping Documentation</title>
+  </head>
+
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">J</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="#">Project 1</a>     
+                <a class="nav-link active" aria-current="page" href="project2.html">Project 2</a>
+                <a class="nav-link" href="#">Project 3</a>
+                <a class="nav-link" href="#">Project 4</a>
+                <a class="nav-link" href="reading.html"> Reading </a>
+              
+              </div>
+            </div>
+          </div>
+        </nav>
+  </div>
+    <div class="container-sm">
+          <h2 class= "h2">Project Two: Ball Movements with Obstacles </h2>
+       <img class="float-start firstdiagram" src="Images/Diagramproject2.svg" >
+     
+          </div>
+      <div class="container-sm">
+       
+        <h3> Background + How Vision Changed</h3> 
+
+        At first I wanted to create a game that involved juice, lemon, and a cup so that the user can control the lemon with the controller and roll it in to the squeezer and fill the cup with juice. 
+        So I began with a diagram. I was inspired to do this project because my hobby cooking and I wanted to do a project relating to something to do with the kitchen.
+        The way of depicting that was a challenging process. At first I thought about doing things using P3D. I thought that it would be cool to image the ball moving around
+        a 3D space. I started off by trying to create a bouncing sphere (the lemon) inside a 3D space. However, it was very hard to calculate the rotations of the sphere. So I had to pivot in to a new direction.
+
+      
+        <div class="container"></div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+
+            <div class="row row row -cols-2">
+              <div class="col"> 
+                <br>
+                <h3> Sensors: An Accelerometer with gyroscope and a Pressure Sensor </h3>
+                </div>
+
+                <br></br>
+
+              <div class="col"></div>
+              <div class="col">
+                <img src= "Images/roundforce-sensitive resistor.png">
+                </div>
+
+              <div class="col"> 
+                <img src= "Images/Accelerometeer+gyroscope.png">
+
+               </div>
+            <br> </br>
+               
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+                  <div class="col">
+                   <h3>The Process of Coding / Connecting Sensors</h3> 
+                  </div>
+                
+                  
+                  <div class="row">
+
+                      <div class="col">
+                        <br>
+                          1. Created a set of code to create the elements in processing and replaced all the
+                          interactions with keyPressed() so that I can add the interactions later on when 
+                         I put together my board.
+                        </div>
+
+                      <div class="col">
+                        <br>
+                         <img src ="Images/process1.png">
+                      </div>
+                 
+                      <div class="container">
+                          <div class="row">
+                            <div class="col">
+                              <br>
+                              <br>
+                              2. Designed the board on the particle.io 
+                              in order to see how I wanted to place my controllers
+                              on the breadboard. Then write code on Arduino to connect 
+                              the sensors.
+                                
+                            </div>
+                            <div class="col">
+                              <br></br>
+                              <br>
+                                <img src ="Images/process2.png">                           
+                             </div>
+
+                             <div class="container">
+                                <div class="row">
+                                  <div class="col">
+                                    <br>
+                                    <br>
+                                   3. Connect the board on to Arduino
+                                    </div>
+                                  <div class="col">
+                                    <br>
+                                    <br>
+                                    <img src ="Images/Serial Monitor.png">
+                                  </div>
+
+                                  <div class="container">
+                                      <div class="row">
+                                        <div class="col">
+                                          <br>
+                                          <br>
+                                         3. Design the controller further
+                                         This was a bit challenging because of the way the sensors
+                                         are shaped. I had to make it so that the the user is able to 
+                                         turn the sensors over. 
+                                          </div>
+                                        <div class="col">
+                                          <br>
+                                          <br>
+                                          <img src ="Images/Untitled_Artwork 59.jpg" width="550px" height="500px">
+                                        </div>
+
+                                        <div class="container">
+                                            <div class="row">
+                                              <div class="col">
+                                                <br>
+                                                <br>
+                                                <img class="Images" src ="Images/this1.JPG" width ="550px" height="500px">
+                                                </div>
+                                              <div class="col">
+                                                <br>
+                                                <br>
+                                                <img class="Images" src ="Images/this2.JPG" width = "550px" height="500px">
+                                              </div>
+
+                                              <div class="container">
+                                                  <div class="row">
+                                                    <div class="col">
+                                                      <br>
+                                                      <br>
+                                                      <h3>Challenges/ Failures</h3>
+                                                      </div>
+                                                    <div class="col">
+                                                      <br>
+                                                      <br>
+                                                      The first codes consisted of trying to work with 3D. On the reference site, 
+                                                      it told me to add P3D to size but I ended up getting errors on the code.
+                                                      I tried to fix the problem by searching the error codes but I couldn't figure it out. 
+                                                      But it turned out that I had to include frameRate() in order for it to start up.
+                                                      In addition, trying to make the ball rotate with 3D was not an easy concept to grasp.
+                                                      So I had to pivot in the middle of the project to depict it in a more feasible way.
+                                                      There were also moments where I couldn't find the right port on the computer,
+                                                      so I had challenges and spent longer time trying to simply connecting the sensors.
+
+                                                    </div>
+
+                                                    <div class="container">
+                                                        <div class="row">
+                                                          <div class="col">
+                                                            <br>
+                                                            <br>
+                                                            <img class="Images" src ="Images/3D_Error.png" width = "250px" height="200px">
+                                                            
+                                                            </div>
+                                                          <div class="col">
+                                                            <br>
+                                                            <br>
+                                                            <img class="Images" src ="Images/3D.jpg" width = "550px" height="500px">
+
+                                                    <div class="container">
+                                                                <div class="row">
+                                                                  <div class="col">
+                                                                    <br>
+                                                                    <br>
+                                                                
+                                                                    <br>
+                                                                    <h3> Future Improvements </h3>
+                                                                    </div>
+                                                                  <div class="col">
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    
+                                                                 
+                                                                    I would like to try to think of more ways to make the controller so that it can be hand held.
+                                                                    I would also like to clean up the drawings of the screen and make it more reactive.
+                                                                    
+                                                                    
+
+                                                            
+                  </div>
+                </div>
+              </div>
+
+
+          </div>
+
+          
+              
+          
+
+    </body>
+
+  </div>
+
+        
+
+        </div>
+      </div>
+
+    
+  </body>
+</html>
