@@ -165,8 +165,8 @@ void loop() {
   Serial.print("+");
   Serial.print(accel.acceleration.y);
   Serial.print("+");
-  Serial.println(accel.acceleration.z);
-  Serial.print("=");
+  Serial.print(accel.acceleration.z);
+  Serial.print("+");
   Serial.println(forceReading);
  
   delay(100);

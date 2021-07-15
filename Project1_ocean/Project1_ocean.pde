@@ -7,17 +7,11 @@ float currentremainder, previousremainder;
 
 void setup() {
   size(800, 600);
-
-
   Timmy = new Whale();
-
-
-
 
   for (int i=0; i<10; i=i+1) {
     krills.add(new Krill());
   }
-
 
   for (int i=0; i<1; i=i+1) {
     plastics.add(new Trash());

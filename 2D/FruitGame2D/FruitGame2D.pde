@@ -3,8 +3,7 @@ import processing.serial.*;
 Serial myConnection;
 
 float posX, posY, posZ, pressure;
-String position;
-String press;
+String serial;
 
 Ball Lemon;
 Obstacle Brick;
@@ -15,23 +14,21 @@ void setup() {
   Lemon = new Ball();
   Brick = new Obstacle();
   Juice = new Cup();
-  
-  myConnection = new Serial(this, Serial.list()[1], 115200);
+  printArray(Serial.list());
+  myConnection = new Serial(this, Serial.list()[2], 115200);
   myConnection.bufferUntil('\n');
 }
 
 void serialEvent(Serial conn) {
-  position= conn.readString();
-  press = conn.readString();
-  println(position);
-  println(press);
-  String[]values = split(press,'=');
+  serial= conn.readString();
+ 
+  String[]values = split(serial,'+');
   //String[] values = split(position,'+');
-  if(values.length==3){
+  if(values.length==4){
     posX= map(float(values[0]), -10, 10, 0, width);
     posY= map(float(values[1]), -10, 10, 0, width);
     posZ= map(float(values[2]), -10, 10, 0, width);
-    //pressure = map(float(values[3]), 0, 4095, 0, height);
+    pressure = map(float(values[3]), 0, 4095, 0, height);
   }
 }
 
