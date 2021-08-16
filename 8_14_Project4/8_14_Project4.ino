@@ -65,6 +65,8 @@ void loop() {
     Serial.print("sending button -> ");
     Serial.println(currentButton);
     digital1->save(currentButton); //saving to the cloud
+    digitalWrite(LED_PIN, HIGH);
+    digitalWrite(BUZZER_PIN, HIGH);
   }
 
   currentDisReading = digitalRead(DISTANCE_PIN);
@@ -85,6 +87,7 @@ void loop() {
       Serial.println("notifyState");
       digital4->save(notifyState);
       Serial.println(notifyState);
+      
       //TODO: record "TRUE" to the Adafruit IO NOTIFY channel
       
     }
@@ -96,6 +99,8 @@ void loop() {
       alarmState = true;
       digital5->save(alarmState);
       Serial.println("alarmState");
+      digitalWrite(LED_PIN, HIGH);
+      digitalWrite(BUZZER_PIN, HIGH);
       //TODO: record "TRUE" to the Adafruit IO ALARM channel
 
       //the package is gone, no need to notify any more
