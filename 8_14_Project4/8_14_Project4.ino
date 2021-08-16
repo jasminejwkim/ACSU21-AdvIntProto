@@ -82,8 +82,9 @@ void loop() {
     //check if there is one = BOTH sensors are TRUE
     if (currentButton != prevButton && currentButton == true && currentDisReading != prevDisReading && currentDisReading == true) {
       notifyState = true;
-      Serial.println(notifyState);
+      Serial.println("notifyState");
       digital4->save(notifyState);
+      Serial.println(notifyState);
       //TODO: record "TRUE" to the Adafruit IO NOTIFY channel
       
     }
@@ -94,13 +95,13 @@ void loop() {
     if(switchState == true && ((currentButton != prevButton && currentButton == false) || (currentDisReading != prevDisReading && currentDisReading == false) ) ){
       alarmState = true;
       digital5->save(alarmState);
-      Serial.println(alarmState);
+      Serial.println("alarmState");
       //TODO: record "TRUE" to the Adafruit IO ALARM channel
 
       //the package is gone, no need to notify any more
       notifyState = false;
       digital4->save(notifyState);
-      Serial.println(notifyState);
+      Serial.println("notifyState");
       //TODO: record "FALSE" to the Adafruit IO NOTIFY channel
     }
 
@@ -108,13 +109,15 @@ void loop() {
       alarmState = false;
       //TODO: record "FALSE" to the Adafruit IO ALARM channel
       digital5->save(alarmState);
-      Serial.println(alarmState);
+      Serial.println("alarmState");
+      digitalWrite(LED_PIN, HIGH);
+      digitalWrite(BUZZER_PIN, HIGH);
       //someone picked up the package
       //TODO: decide wether BOTH or EITHER need to go FALSE ????, right now it's EITHER
       if((currentButton != prevButton && currentButton == false) || (currentDisReading != prevDisReading && currentDisReading == false) ) {
         notifyState = false;
         digital4->save(notifyState);
-        Serial.println(notifyState);
+        Serial.println("notifyState");
         //TODO: record "FALSE" to the Adafruit IO NOTIFY channel
       }
     }

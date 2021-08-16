@@ -10,7 +10,7 @@
 
 .heading{
     padding:50px;
-    font-size: 20px;
+    font-size: 30px;
 
 
 }
@@ -63,7 +63,7 @@
 }
 
 .h3{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .colorbox{
@@ -74,12 +74,12 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 .h6{
-    color: lightgray;
-    font-weight: bold;
+    color: #F8F8F8;
+    
 }
 
 .tabs{
-    margin-left: 10%;
+    
     margin-top:5%;
 
 }
@@ -99,7 +99,27 @@
 
 .h4{
     font-size: 25px;
-    margin-left: 10%;
-    padding-left:10%;
+
 }
 
+.subtitles{
+    padding-left: 4%;
+}
+
+.card-title{
+    font-weight: bold;
+}
+.card-text{
+    color: #BABABA;
+}
+
+.subtitless{
+    padding-left: 10%;
+}
+.subtitlesss{
+    padding-left: 15%;
+}
+.h10{
+    font-size: 10;
+    color: grey;
+}
